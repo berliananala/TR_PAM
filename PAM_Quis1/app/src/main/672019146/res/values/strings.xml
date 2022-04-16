@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PAM_Quis1</string>
+    <string name="username">Username</string>
+    <string name="fullname">Fullname</string>
+    <string name="password">Password</string>
+    <string name="confrimpass">Confrim_Password</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+</resources>
