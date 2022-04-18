@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">tr</string>
+    <string name="judul">NFT Mar</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+    <string name="dashboeard">My Dashboard</string>
+    <string name="username">Username</string>
+    <string name="mainmenu">Main Menu</string>
+    <string name="view">View</string>
+    <string name="art">Digital Art</string>
+    <string name="cam">Photograph</string>
+    <string name="sketch">Sketch</string>
+    <string name="sub_menu">Recomendation</string>
+    <string name="sub_des">Discover some art for you</string>
+    <string name="his">History</string>
+    <string name="info">Information</string>
+    <string name="price">Price</string>
+</resources>
