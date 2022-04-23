@@ -64,7 +64,7 @@
             android:text="@string/login"
             android:textColor="@color/white"
             android:textSize="18sp"
-            />
+            android:onClick="login" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,7 +101,8 @@
             android:padding="10dp"
             android:text="@string/register"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:onClick="registrasi" />
 
     </LinearLayout>
 </RelativeLayout>
