@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText editTextUsername, editTextPassword;
+   private EditText editTextUsername, editTextPassword;
     private Button btnLogin, btnRegis;
 
     @Override
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString();
 
                 if (editTextUsername.getText().toString().length() == 0) {
-                    editTextUsername.setError("Username required!");
+                    editTextUsername.setError("Nama pengguna diperlukan!");
                 } else if (editTextPassword.getText().toString().length() == 0) {
-                    editTextPassword.setError("Password required!");
+                    editTextPassword.setError("Kata sandi diperlukan!");
                 } else {
                     Toast.makeText(getApplicationContext(), "Anda Sudah Berhasil", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
@@ -47,12 +47,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void registrasi(View view) {
-        Intent intent2 = new Intent(this, Registrasi.class);
-        startActivity(intent2);
+        Intent intent3= new Intent(this, Registrasi.class);
+        startActivity(intent3);
     }
 
     public void login(View login){
-        Intent intent4 = new Intent(Registrasi.this, MainActivity.class);
+        Intent intent4 = new Intent(this, HomeActivity.class);
         startActivity(intent4);
+    }
+
+    public void back(View view) {
+        Intent intent5 = new Intent(this, Registrasi.class);
+        startActivity(intent5);
     }
 }
