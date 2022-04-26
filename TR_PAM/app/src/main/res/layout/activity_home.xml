@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="@string/NFT_Market"
+                android:text="@string/dashboeard"
                 android:textColor="@android:color/white"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -59,8 +59,6 @@
                 app:layout_constraintStart_toStartOf="@+id/view4"
                 app:layout_constraintTop_toTopOf="@+id/view4" />
 
-
-
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="wrap_content"
@@ -75,18 +73,10 @@
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     tools:text="@string/username"
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/please_fill"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    tools:text="Traveller"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp" />
+                
             </LinearLayout>
 
             <TextView
@@ -95,9 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="24dp"
-
                 tools:text="$ 800"
-
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/view3"
@@ -130,7 +118,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:text="@string/mainmenu"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
@@ -138,7 +125,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
                         android:text="Explore the beauty of world"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -149,21 +135,6 @@
                     android:background="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"/>
-                
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginRight="16dp"
-                    android:text="Lihat Semua"
-                    android:textColor="#448AFF"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="15dp"></RelativeLayout>
 
                 <LinearLayout
                     android:layout_marginBottom="24dp"
@@ -173,12 +144,13 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pisa"
+                        android:id="@+id/btn_sub_view"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="setBtnSubView">
 
                         <ImageView
                             android:layout_width="64dp"
@@ -186,7 +158,6 @@
                             android:src="@drawable/art"/>
 
                         <TextView
-
                             android:textColor="@android:color/black"
                             android:text="@string/view"
                             android:textSize="16sp"
@@ -195,12 +166,13 @@
 
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/btn_ticket_torri"
+                        android:id="@+id/btn_sub_digitalArt"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="setBtnSubDigitalArt">
 
                         <ImageView
                             android:layout_width="64dp"
@@ -208,16 +180,12 @@
                             android:src="@drawable/brush"/>
 
                         <TextView
-
                             android:textColor="@android:color/black"
                             android:text="@string/art"
                             android:textSize="16sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
-
                     </LinearLayout>
-
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -228,12 +196,13 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/btn_ticket_pagoda"
+                        android:id="@+id/btn_sub_photograph"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="setBtnSubPhotograph">
 
                         <ImageView
                             android:layout_width="64dp"
@@ -241,7 +210,6 @@
                             android:src="@drawable/camera"/>
 
                         <TextView
-
                             android:textColor="@android:color/black"
                             android:text="@string/cam"
                             android:textSize="16sp"
@@ -250,12 +218,13 @@
 
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/btn_ticket_sphinx"
+                        android:id="@+id/btn_sub_sketch"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:onClick="setBtnSubSketch">
 
                         <ImageView
                             android:layout_width="64dp"
@@ -263,7 +232,6 @@
                             android:src="@drawable/sc"/>
 
                         <TextView
-
                             android:textColor="@android:color/black"
                             android:text="@string/sketch"
                             android:textSize="16sp"
@@ -300,44 +268,15 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <HorizontalScrollView
-                android:scrollbars="none"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginStart="24dp"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recomend_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/recently_item"
-                        android:layout_width="200dp"
-                        android:layout_height="98dp"
-                        android:layout_marginRight="14dp"
-                        android:src="@drawable/ab" />
-
-                    <ImageView
-                        android:id="@+id/recently_item2"
-                        android:layout_width="200dp"
-                        android:layout_height="98dp"
-                        android:layout_marginRight="14dp"
-                        android:src="@drawable/val" />
-
-                    <ImageView
-                        android:id="@+id/recently_item3"
-                        android:layout_width="200dp"
-                        android:layout_height="98dp"
-                        android:layout_marginRight="14dp"
-                        android:src="@drawable/yel" />
-
-                </LinearLayout>
-            </HorizontalScrollView>
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
