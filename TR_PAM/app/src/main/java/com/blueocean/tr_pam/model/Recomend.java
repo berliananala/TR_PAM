@@ -1,4 +1,4 @@
-package com.example.tr.model;
+package com.blueocean.tr_pam.model;
 
 import android.graphics.drawable.Drawable;
 
