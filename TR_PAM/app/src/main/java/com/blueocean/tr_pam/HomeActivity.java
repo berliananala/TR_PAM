@@ -11,8 +11,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.tr.adapter.RecomendAdapter;
-import com.example.tr.model.Recomend;
+import com.blueocean.tr_pam.adapter.RecomendAdapter;
+import com.blueocean.tr_pam.model.Recomend;
 
 import java.util.ArrayList;
 import java.util.List;
