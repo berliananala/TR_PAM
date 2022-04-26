@@ -1,4 +1,4 @@
-package com.example.tr.adapter;
+package com.blueocean.tr_pam.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tr.ProductDetails;
-import com.example.tr.R;
-import com.example.tr.model.Recomend;
+import com.blueocean.tr_pam.ProductDetails;
+import com.blueocean.tr_pam.R;
+import com.blueocean.tr_pam.model.Recomend;
 
 import java.util.List;
 
