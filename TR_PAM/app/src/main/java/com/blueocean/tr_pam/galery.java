@@ -1,4 +1,4 @@
-package com.example.tr;
+package com.blueocean.tr_pam;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tr.adapter.AllCategoryAdapter;
-import com.example.tr.model.AllCategoryModel;
+import com.blueocean.tr_pam.AllCategoryAdapter;
+import com.blueocean.tr_pam.AllCategoryModel;
 
 import java.util.ArrayList;
 import java.util.List;
