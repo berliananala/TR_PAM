@@ -1,4 +1,4 @@
-package com.example.tr;
+package com.blueocean.tr_pam;
 
 import android.os.Bundle;
 
