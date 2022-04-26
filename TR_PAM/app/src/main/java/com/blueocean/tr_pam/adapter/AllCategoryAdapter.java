@@ -1,4 +1,4 @@
-package com.example.tr.adapter;
+package com.blueocean.tr_pam.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.tr.R;
-import com.example.tr.model.AllCategoryModel;
+import com.blueocean.tr_pam.R;
+import com.blueocean.tr_pam.model.AllCategoryModel;
 
 import java.util.List;
 public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.AllCategoryViewHolder> {
