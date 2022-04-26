@@ -1,4 +1,4 @@
-package com.example.tr.adapter;
+package com.blueocean.tr_pam.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tr.R;
-import com.example.tr.model.Category;
+import com.blueocean.tr_pam.R;
+import com.blueocean.tr_pam.model.Category;
 
 import java.util.List;
 
